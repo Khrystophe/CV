@@ -60,7 +60,7 @@
         a {
           color: $color-5;
         }
-        .navActive {
+        .selected_link {
           color: $color-4;
         }
 
@@ -72,6 +72,9 @@
         }
         span {
           margin-left: 2.7rem;
+          &:hover {
+            color: $color-4;
+          }
         }
       }
     }
@@ -95,7 +98,7 @@
         cursor: pointer;
 
         a:visited {
-          color: $color-1;
+          color: $color-2;
         }
         &:nth-child(1) {
           padding: 0.5rem 0.85rem;

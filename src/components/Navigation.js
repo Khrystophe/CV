@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+const selected = ({ isActive }) => (isActive ? "selected_link" : "");
 const Navigation = () => {
   return (
     <div className="sidebar">
@@ -14,25 +15,25 @@ const Navigation = () => {
       <div className="navigation">
         <ul>
           <li>
-            <NavLink exact to="/" activeClassName="navActive">
+            <NavLink to="/" className={selected}>
               <i className="fas fa-home"></i>
               <span>Accueil</span>
             </NavLink>
           </li>
           <li>
-            <NavLink exact to="/competences" activeClassName="navActive">
+            <NavLink to="/competences" className={selected}>
               <i className="fas fa-mountain"></i>
               <span>Compétences</span>
             </NavLink>
           </li>
           <li>
-            <NavLink exact to="/portfolio" activeClassName="navActive">
+            <NavLink to="/portfolio" className={selected}>
               <i className="fas fa-image"></i>
               <span>Portfolio</span>
             </NavLink>
           </li>
           <li>
-            <NavLink exact to="/contact" activeClassName="navActive">
+            <NavLink to="/contact" className={selected}>
               <i className="fas fa-address-book"></i>
               <span>Contact</span>
             </NavLink>
@@ -44,7 +45,7 @@ const Navigation = () => {
         <ul>
           <li>
             <a
-              href="https://www.google.com"
+              href="https://fr.linkedin.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
