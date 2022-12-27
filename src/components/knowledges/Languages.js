@@ -7,13 +7,15 @@ class Languages extends Component {
       { id: 1, value: "JavaScript", xp: 1.8 },
       { id: 2, value: "Css", xp: 2 },
       { id: 3, value: "Php", xp: 0.7 },
-      { id: 14, value: "Java", xp: 0.4 },
+      { id: 4, value: "Java", xp: 0.4 },
     ],
     frameworks: [
       { id: 1, value: "React", xp: 1.4 },
       { id: 2, value: "Bootstrap", xp: 2 },
       { id: 3, value: "Sass", xp: 1.5 },
-      { id: 14, value: "Material", xp: 0.5 },
+      { id: 4, value: "Gsap", xp: 0.5 },
+      { id: 5, value: "Barba.js", xp: 0.5 },
+      { id: 6, value: "Symfony", xp: 0.5 },
     ],
   };
   render() {
