@@ -42,9 +42,11 @@ class ProjectList extends Component {
         </ul>
 
         <div className="projects">
-          {projects.map((item) => {
-            return <Project key={item.id} item={item} />;
-          })}
+          {projects
+            .filter((item) => item.languages.includes(selectedRadio))
+            .map((item) => {
+              return <Project key={item.id} item={item} />;
+            })}
         </div>
       </div>
     );
