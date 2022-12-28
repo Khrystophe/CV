@@ -4,15 +4,15 @@ $font-1: 'Nova Round', cursive;
 $font-2: 'Dosis', sans-serif;
 $font-3: 'Josefin Sans', serif;
 
-$color-1: #2a1d52;
-$color-2: #6C77F4;
-$color-3: rgb(99, 164, 233);
-$color-4: #4FEDD2;
-$color-5: #36D0EA;
+$color-1: #403234;
+$color-2: #6f4849;
+$color-3: #687477;
+$color-4: #f7f3f5;
+$color-5: #e2c2b3;
 $white: #ddd;
-$black: #333;
+$black: #202020;
 
-$borderRadius: 25px;
+$borderRadius: 10px;
 $shadow: 0 1px 3px #333;
 $minHeight: 95vh;
 
@@ -27,10 +27,11 @@ $minHeight: 95vh;
   padding: 0;
 }
 body {
-  margin: 1rem auto;
-  max-width: 1200px;
+  margin: 1rem ;
   font-family: $font-1;
+  // max-width: 1200px;
   color: $black;
+  background-color: #202124;
 }
 button {
   cursor: pointer;

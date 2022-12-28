@@ -61,24 +61,7 @@ const Navigation = () => {
               <i className="fab fa-github"></i>
             </a>
           </li>
-          <li>
-            <a
-              href="https://www.google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-codepen"></i>
-            </a>
-          </li>
+          
         </ul>
 
         <div className="signature">

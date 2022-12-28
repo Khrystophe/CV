@@ -3,10 +3,14 @@
     background: linear-gradient(115deg, $color-1 50%, transparent 100%);
     min-height: $minHeight;
     width: 100%;
-    min-height: 500px;
     border-radius: $borderRadius;
     position: relative;
     overflow: hidden;
+    border: none;
+    border-top: 1.5px solid rgb(105, 116, 119);
+    border-bottom: 1.5px solid rgb(16, 16, 16);
+    border-right: 1.5px solid rgb(70, 76, 78);
+    border-left: 1.5px solid rgb(32, 32, 32);
 
     &:after {
       content: "";
@@ -31,42 +35,78 @@
         text-transform: uppercase;
         text-shadow: 3px 6px 2px $black;
       }
+
       h2 {
         font-size: 2.5rem;
         padding: 1.5rem 0 4rem;
         color: $color-3;
         text-shadow: 1px 4px 1px $black;
       }
+
       .pdf {
         a {
+          background: linear-gradient(180deg, $color-4 0%, $black 100%);
+          position: relative;
           font-size: 1.5rem;
-          background: $color-3;
           padding: 1rem 2rem;
-          border-radius: $borderRadius;
-          box-shadow: 0 5px 1px rgb(15, 15, 15);
-          transition: 0.2s ease;
+          border: none;
+          border-top: 1px solid rgb(36, 36, 36);
+          border-bottom: 1px solid rgb(0, 0, 0);
+          border-radius: 10px;
+          color: $color-3;
+          text-shadow: 1px 1px 1px black, 1px 1px 1px #343434;
+          letter-spacing: 0.11rem;
+          transition: color 0.7s;
+          span {
+            position: relative;
+            z-index: 1;
+          }
+          &:before {
+            background: linear-gradient(180deg, $black 0%, $color-4 100%);
+            border-radius: 10px;
+            position: absolute;
+            content: "";
+            top: 0px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            transition: opacity 0.3s;
+            opacity: 0;
+          }
 
           &:hover {
-            background: $color-4;
+            color: $color-4;
+            text-shadow: 1px 1px 1px #343434, 1px 1px 1px rgb(66, 66, 66);
           }
+
+          &:hover::before {
+            opacity: 1;
+            z-index: 1;
+          }
+
         }
       }
     }
   }
 }
+
 @media screen and (max-width: 850px) {
   .homeContent {
     margin: 0 !important;
   }
 }
+
 @media screen and (max-width: 580px) {
   .homeContent {
     &:after {
       background: url("../../media/bigGates.jpg") no-repeat 60% 50% / cover !important;
     }
+
     h1 {
       font-size: 3rem !important;
     }
+
     h2 {
       font-size: 1.8rem !important;
     }
