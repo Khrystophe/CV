@@ -99,30 +99,63 @@
       li {
         font-size: 2.5rem;
         background: linear-gradient(180deg, #f7f3f5 0%, #202020 100%);
-        color: $color-1;
         text-shadow: 1px 1px 1px black, 1px 1px 1px #343434;
         border-radius: 50%;
         padding: 0.5rem 0.8rem;
         cursor: pointer;
-        a{
+        i {
+          position: relative;
+          z-index: 1;
+        }
+        a {
           color: $black;
           transition: 0.7s;
-          &:hover{
-            color :$color-4;
+          &:hover {
+            color: $color-4;
+          }
+          &:before {
+            background: linear-gradient(180deg, $black 0%, $color-4 100%);
+            border-radius: 50%;
+            position: absolute;
+            content: "";
+            width: 64px;
+            height: 64px;
+            bottom: 45px;
+            z-index: -1;
+            transition: opacity 0.3s;
+            opacity: 0;
+          }
+          &:hover::before {
+            opacity: 1;
+            z-index: 1;
+          }
+        }
+        &:nth-child(1){
+          a{
+            &::before{
+              left: 50px;
+            }
+          }
+        }
+        &:nth-child(2){
+          a{
+            &::before{
+              left: 150px;
+            }
           }
         }
 
         a:visited {
-          color: $color-2;
+          color: $color-3;
+          &:hover {
+            color: $color-4;
+          }
         }
         &:nth-child(1) {
           padding: 0.5rem 0.85rem;
         }
-        &:nth-child(4) {
-          padding: 0.5rem 0.75rem;
-        }
+
         &:hover {
-        
           text-shadow: 1px 1px 1px #343434, 1px 1px 1px rgb(66, 66, 66);
         }
       }
@@ -136,8 +169,6 @@
       p {
         color: $color-5;
         text-shadow: 1px 2px 0px #282828, 1px 3px 0px #202020;
-
-       
       }
     }
   }
