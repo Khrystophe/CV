@@ -3,6 +3,7 @@
   font-family: "Nova Round", cursive;
   height: 100%;
   min-height: $minHeight;
+  box-shadow: $shadow;
   border: none;
   border-top: 1.5px solid rgb(105 116 119);
   border-bottom: 1.5px solid rgb(16 16 16);
@@ -42,7 +43,7 @@
         letter-spacing: 0.2rem;
         margin-top: 1.5rem;
         color: $color-5;
-        text-shadow: 1px 2px 0px #282828, 1px 3px 0px #202020;
+        text-shadow: 1px 2px 2px #707070, 1px 3px 3px #000000;
       }
     }
   }
@@ -66,7 +67,7 @@
 
         a {
           color: $color-5;
-          text-shadow: 1px 2px 0px #282828, 1px 3px 0px #202020;
+          text-shadow: 1px 2px 2px #707070, 1px 3px 3px #000000;
         }
         .selected_link {
           color: $color-4;
@@ -130,16 +131,16 @@
             z-index: 1;
           }
         }
-        &:nth-child(1){
-          a{
-            &::before{
+        &:nth-child(1) {
+          a {
+            &::before {
               left: 50px;
             }
           }
         }
-        &:nth-child(2){
-          a{
-            &::before{
+        &:nth-child(2) {
+          a {
+            &::before {
               left: 150px;
             }
           }
@@ -168,7 +169,7 @@
 
       p {
         color: $color-5;
-        text-shadow: 1px 2px 0px #282828, 1px 3px 0px #202020;
+        text-shadow: 1px 2px 2px #707070, 1px 3px 3px #000000;
       }
     }
   }
@@ -186,7 +187,7 @@
     }
     .navigation {
       width: 100%;
-      padding: 0.1rem 1rem;
+      padding: 0.1rem 3rem 0rem 1rem;
 
       ul {
         display: flex;

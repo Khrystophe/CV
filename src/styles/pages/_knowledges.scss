@@ -3,6 +3,9 @@
     min-height: $minHeight;
     width: 100%;
     position: relative;
+    padding: 0 0.5rem 0 0.5rem;
+    box-shadow: $shadow;
+    border-radius: 10px;
     overflow: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -17,6 +20,7 @@
     .hobbies {
       background: $color-2;
       border-radius: $borderRadius;
+      box-shadow: $shadow;
       border: none;
       border-top: 1.5px solid rgb(105 116 119);
       border-bottom: 1.5px solid rgb(16 16 16);
@@ -30,10 +34,10 @@
       font-family: $font-2;
       color: $color-5;
       text-transform: uppercase;
-      text-shadow: 1px 2px 0px #282828, 1px 3px 0px $black;
+      text-shadow: 1px 2px 2px #707070, 1px 3px 3px #000000;
     }
     h4 {
-      text-shadow: 1px 2px 0px #282828, 1px 3px 0px $black;
+      text-shadow: 1px 2px 2px #707070, 1px 3px 3px #000000;
     }
     h5 {
       text-shadow: 0.5px 0.5px 0.5px #282828, 0.5px 0.5px 0.5px $black;
@@ -141,13 +145,11 @@
         .sixMonths {
           height: 39px;
           border-right: 1px solid rgb(110 110 110);
-          box-shadow: 1.5px 0px 0px $black;
           width: 44%;
         }
         .oneYear {
           height: 39px;
           border-right: 1px solid rgb(110 110 110);
-          box-shadow: 1.5px 0px 0px $black;
           width: 205%;
         }
       }
@@ -252,8 +254,7 @@
       padding: 0.2rem 1rem !important;
     }
   }
-}
-@media screen and (max-width: 500px) {
+
   .knowledgesContent {
     display: grid !important;
     grid-template-columns: 1fr !important;
