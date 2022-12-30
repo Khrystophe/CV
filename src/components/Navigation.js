@@ -16,26 +16,30 @@ const Navigation = () => {
         <ul>
           <li>
             <NavLink to="/" className={selected}>
-              <i className="fas fa-home"></i>
-              <span>Accueil</span>
+              <i className="fas fa-home">
+                <span> Accueil</span>
+              </i>
             </NavLink>
           </li>
           <li>
             <NavLink to="/competences" className={selected}>
-              <i className="fas fa-mountain"></i>
-              <span>Compétences</span>
+              <i className="fas fa-mountain">
+                <span>Compétences</span>
+              </i>
             </NavLink>
           </li>
           <li>
             <NavLink to="/portfolio" className={selected}>
-              <i className="fas fa-image"></i>
-              <span>Portfolio</span>
+              <i className="fas fa-image">
+                <span> Portfolio</span>
+              </i>
             </NavLink>
           </li>
           <li>
             <NavLink to="/contact" className={selected}>
-              <i className="fas fa-address-book"></i>
-              <span>Contact</span>
+              <i className="fas fa-address-book">
+                <span> Contact</span>
+              </i>
             </NavLink>
           </li>
         </ul>
@@ -61,7 +65,6 @@ const Navigation = () => {
               <i className="fab fa-github"></i>
             </a>
           </li>
-          
         </ul>
 
         <div className="signature">

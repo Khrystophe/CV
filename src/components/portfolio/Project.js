@@ -22,9 +22,11 @@ class Project extends Component {
         </div>
         <h3>{name}</h3>
         <img src={picture} alt="" onClick={this.handleInfo} />
-        <span className="infos" onClick={this.handleInfo}>
-          <i className="fas fa-plus-circle"></i>
-        </span>
+        <div className="flexInfos">
+          <span className="infos" onClick={this.handleInfo}>
+            <i className="fas fa-plus-circle"></i>
+          </span>
+        </div>
 
         {this.state.showInfo && (
           <div className="showInfos">
@@ -38,7 +40,7 @@ class Project extends Component {
                     className="button"
                     target="_blank"
                   >
-                    Code Source
+                    <span>Code Source</span>
                   </a>
                 </div>
               </div>
@@ -46,7 +48,7 @@ class Project extends Component {
               <p className="text">{info}</p>
 
               <div className="button return" onClick={this.handleInfo}>
-                Fermer
+                <span>Fermer</span>
               </div>
             </div>
           </div>
