@@ -19,7 +19,7 @@
     .education,
     .otherSkills,
     .hobbies {
-      background: $color-2;
+      background: linear-gradient(90deg, $color-2 0%, $color-1 100%);
       border-radius: $borderRadius;
       box-shadow: $shadow;
       border: none;
@@ -192,7 +192,7 @@
         padding: 0.5rem 0 0.5rem 1rem;
       }
       p {
-        text-align: justify;
+        // text-align: justify;
         padding: 0 1rem;
       }
       .edu {
