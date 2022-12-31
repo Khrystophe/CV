@@ -8,13 +8,15 @@
     overflow: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 70% 30%;
+    grid-template-rows: 35% 35% 30%;
     grid-template-areas:
       "L E E"
+      "L F F"
       "O O H";
 
     .languagesFrameworks,
     .experience,
+    .education,
     .otherSkills,
     .hobbies {
       background: $color-2;
@@ -152,8 +154,8 @@
       overflow-y: auto;
       grid-area: E;
       margin: 0 0 0.5rem 0.5rem;
-      max-height: 70vh;
-      min-height: 450px;
+      max-height: 35vh;
+      min-height: 221px;
 
       h4 {
         font-size: 1.1rem;
@@ -172,15 +174,39 @@
         margin-bottom: 1rem;
       }
     }
+    .education {
+      grid-area: F;
+      overflow-y: auto;
+
+      margin: 0 0 0.5rem 0.5rem;
+      max-height: 35vh;
+      min-height: 221px;
+
+      h4 {
+        font-size: 1.1rem;
+        color: $color-7;
+      }
+      h5 {
+        color: #543737;
+        text-shadow: 0.5px 0.5px 0.5px $black;
+        padding: 0.5rem 0 0.5rem 1rem;
+      }
+      p {
+        text-align: justify;
+        padding: 0 1rem;
+      }
+      .edu {
+        margin-bottom: 1rem;
+      }
+    }
     .otherSkills {
       grid-area: O;
       margin-right: 0.5rem;
 
       .list {
         display: flex;
-        width: 80%;
+        width: 50%;
         height: 100%;
-        margin: 0 auto;
         justify-content: space-between;
 
         ul {
@@ -189,6 +215,13 @@
           li {
             color: #f7f3f58f;
             text-shadow: 0px 2px 2px #000000, 1px 2px 2px $black;
+            span {
+              position: absolute;
+              transform: translateX(2.2rem);
+            }
+            i {
+              color: $color-7;
+            }
           }
         }
       }
@@ -202,11 +235,14 @@
         display: grid;
 
         li {
-          color: #f7f3f58f;
+          color: $color-8;
           text-shadow: 0px 2px 2px #000000, 1px 2px 2px $black;
           span {
             position: absolute;
             transform: translateX(2.2rem);
+          }
+          i {
+            color: $color-7;
           }
         }
       }
@@ -221,7 +257,8 @@
     .languagesList {
       padding-top: 0.2rem !important;
     }
-    p {
+    p,
+    .p {
       font-size: 0.8rem;
     }
     .otherSkills,
@@ -239,27 +276,28 @@
       font-size: 0.6rem !important;
       padding: 0.2rem 1rem !important;
     }
-  }
 
-  .knowledgesContent {
     padding: 0 0.5rem 0 0.5rem !important;
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    grid-template-rows: 1fr 1fr 180px 180px !important;
+    display: flex !important;
+    flex-direction: column;
 
-    .languages {
-      grid-area: 1 !important;
+    .languagesFrameworks {
+      max-height: max-content !important;
     }
     .experience {
-      grid-area: 2 !important;
       margin-left: 0 !important;
+      max-height: max-content !important;
+    }
+    .education {
+      margin-left: 0 !important;
+      max-height: max-content !important;
     }
     .otherSkills {
-      grid-area: 3 !important;
+      max-height: max-content !important;
       margin-right: 0 !important;
     }
     .hobbies {
-      grid-area: 4 !important;
+      max-height: max-content !important;
       margin-top: 0.5rem !important;
     }
     .languagesFrameworks {
@@ -283,6 +321,13 @@
           }
         }
       }
+    }
+  }
+}
+@media (max-width: 520px) {
+  .otherSkills {
+    .list {
+      flex-direction: column !important;
     }
   }
 }

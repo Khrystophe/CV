@@ -52,8 +52,8 @@
           font-size: 1.5rem;
           padding: 1rem 2rem;
           border-radius: 10px;
-          color: $black;
-          text-shadow: 1px 1px 1px black, 1px 1px 1px #343434;
+          color: $color-3;
+          text-shadow: 0px 2px 2px #000000, 1px 2px 2px $black;
           letter-spacing: 0.11rem;
           transition: color 0.7s;
           span {
@@ -75,8 +75,8 @@
           }
 
           &:hover {
-            color: $color-4;
-            text-shadow: 1px 1px 1px #343434, 1px 1px 1px rgb(66, 66, 66);
+            color: $color-8;
+            text-shadow: 0px 2px 2px #000000, 1px 2px 2px $black;
           }
 
           &:hover::before {

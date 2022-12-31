@@ -13,6 +13,7 @@
   .radioDisplay {
     grid-area: 1;
     border-radius: $borderRadius;
+    position: relative;
     display: flex;
     width: 100%;
     padding: 1rem 2rem;
@@ -188,7 +189,7 @@
         top: 25%;
         width: 600px;
         margin: 0 auto;
-        color: #f7f3f58f;
+        color: $color-7;
         background: $color-2;
         border-radius: $borderRadius;
         padding: 2rem;
@@ -225,17 +226,18 @@
           position: relative;
         }
         cursor: pointer;
-        background: linear-gradient(180deg, #f7f3f58f 0%, $black 100%);
+        box-shadow: 0px -5px 20px #00000038, 0px 5px 20px #00000038;
+        background: linear-gradient(162.5deg, $color-7 0%, $black 100%);
         position: relative;
         padding: 1rem 1rem;
-        border-radius: 10px;
-        color: $black;
-        text-shadow: 1px 1px 1px black, 1px 1px 1px #343434;
+        border-radius: 30px;
+        color: $color-3;
+        text-shadow: 0px 2px 2px #000000, 1px 2px 2px $black;
         transition: color 0.7s;
 
         &:before {
-          background: linear-gradient(180deg, $black 0%, #f7f3f58f 100%);
-          border-radius: 10px;
+          background: linear-gradient(162.5deg, $black 0%, $color-7 100%);
+          border-radius: 30px;
           position: absolute;
           content: "";
           top: 0px;
@@ -248,8 +250,8 @@
         }
 
         &:hover {
-          color: #f7f3f58f;
-          text-shadow: 1px 1px 1px #343434, 1px 1px 1px rgb(66, 66, 66);
+          color: $color-8;
+          text-shadow: 0px 2px 2px #000000, 1px 2px 2px $black;
         }
 
         &:hover::before {
@@ -268,6 +270,15 @@
     }
   }
 }
+
+@media screen and (max-width: 850px) {
+  .portfolio {
+    .projects {
+      overflow-y: initial !important;
+    }
+  }
+}
+
 @media (max-width: 650px) and (min-width: 521px) {
   .portfolioContent {
     .project {

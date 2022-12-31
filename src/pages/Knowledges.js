@@ -4,6 +4,7 @@ import Languages from "../components/knowledges/Languages";
 import Experience from "../components/knowledges/Experience";
 import OtherSkills from "../components/knowledges/OtherSkills";
 import Hobbies from "../components/knowledges/Hobbies";
+import Education from "../components/knowledges/Education";
 
 const Knowledges = () => {
   return (
@@ -12,6 +13,7 @@ const Knowledges = () => {
       <div className="knowledgesContent">
         <Languages />
         <Experience />
+        <Education />
         <OtherSkills />
         <Hobbies />
       </div>
