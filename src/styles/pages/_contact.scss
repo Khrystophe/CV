@@ -1,8 +1,15 @@
 .contactContent {
+  position: relative;
   min-height: 650px;
   max-height: 95vh;
   background: #726158;
   border-radius: $borderRadius;
+  border: none;
+  border-top: 1.5px solid rgb(105, 116, 119);
+  border-bottom: 1.5px solid rgb(16, 16, 16);
+  border-right: 1.5px solid rgb(70, 76, 78);
+  border-left: 1.5px solid rgb(32, 32, 32);
+  box-shadow: $shadow;
   width: 100%;
   overflow: hidden;
   display: grid;
@@ -17,7 +24,7 @@
     grid-area: 1;
     width: 100%;
     position: relative;
-    background: $color-1;
+    background: linear-gradient(115deg, $color-1 0%, $black 100%);
     height: 650px;
 
     &:before {
@@ -39,12 +46,17 @@
   }
   .contactBox {
     grid-area: 2;
-    background: $color-5;
+    background: linear-gradient(115deg, $color-5 0%, $color-2 100%);
+    box-shadow: $shadow;
+    border: none;
+    border-top: 1.5px solid rgb(105 116 119);
+    border-bottom: 1.5px solid rgb(16 16 16);
+    border-right: 1.5px solid rgb(70 76 78);
+    border-left: 1.5px solid rgb(32 32 32);
     margin: 0 auto;
     padding: 1rem 3rem;
     z-index: 2;
     border-radius: $borderRadius;
-    box-shadow: 0 3px 10px #333;
     width: 50%;
     min-width: 440px;
     min-height: 200px;
@@ -53,7 +65,8 @@
       text-align: center;
       margin-top: 0.3rem;
       position: relative;
-      color: $color-2;
+      color: $color-7;
+      text-shadow: 0px 2px 2px #000000, 1px 2px 2px $black;
 
       &:after {
         content: "";
@@ -81,9 +94,12 @@
         position: absolute;
         transform: translateY(2px);
         color: $color-2;
+        text-shadow: 0px 2px 2px #000000, 1px 2px 2px $black;
       }
       span {
         font-size: 1.4rem;
+        color: $color-1;
+        text-shadow: 0px 2px 2px #000000, 1px 2px 2px $black;
         position: absolute;
         transform: translateX(52px);
         background: transparent;
@@ -110,23 +126,54 @@
 
       a {
         width: 20%;
-        font-size: 1.2rem;
-        background: $color-5;
+        color: $color-7;
+        text-shadow: 0px 2px 2px #000000, 1px 2px 2px $black;
+        background: linear-gradient(115deg, $color-5 0%, $color-2 100%);
+        border: none;
+        border-top: 1.5px solid rgb(105 116 119);
+        border-bottom: 1.5px solid rgb(16 16 16);
+        border-right: 1.5px solid rgb(70 76 78);
+        border-left: 1.5px solid rgb(32 32 32);
         border-radius: $borderRadius;
         display: inline-block;
         padding: 0.7rem 0;
         box-shadow: $shadow;
         transform: scaleY(0);
         transform-origin: center;
-        transition: 0.2s ease;
-        transition: scale 0.1s;
+        transition: color 0.3s;
 
-        &:hover {
-          background: $color-4;
+        &:before {
+          background: linear-gradient(162.5deg, $color-2 0%, $color-5 100%);
+          border-radius: 10px;
+          position: absolute;
+          content: "";
+          top: 0px;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          z-index: -1;
+          transition: opacity 0.3s;
+          opacity: 0;
         }
 
+        &:hover {
+          color: $color-8;
+          text-shadow: 0px 2px 2px #000000, 1px 2px 2px $black;
+        }
+
+        &:hover::before {
+          opacity: 1;
+          z-index: 1;
+        }
+        h4 {
+          position: relative;
+          z-index: 2;
+          font-size: 1.5rem;
+        }
         i {
-          color: $color-2;
+          position: relative;
+          z-index: 2;
+          font-size: 2rem;
           margin-top: 0.3rem;
         }
       }
