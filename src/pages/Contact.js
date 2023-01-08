@@ -9,7 +9,7 @@ const Contact = () => {
       <div className="contactContent">
         <div className="header"></div>
         <div className="contactBox">
-          <h1>Contactez-moi !</h1>
+          <h1>Contactez-moi</h1>
           <ul>
             <li>
               <i className="fas fa-map-marker-alt"></i>
@@ -17,27 +17,27 @@ const Contact = () => {
             </li>
             <li>
               <i className="fas fa-mobile-alt"></i>
-              <CopyToClipboard text="0615141891">
+              <CopyToClipboard text="0648827316">
                 <span
                   className="clickInput"
                   onClick={() => {
-                    alert("Tel copié !");
+                    alert("Numéro de Téléphone Copié ");
                   }}
                 >
-                  0615141891
+                  06 48 82 73 16
                 </span>
               </CopyToClipboard>
             </li>
             <li>
               <i className="fas fa-envelope"></i>
-              <CopyToClipboard text="monmail@gmail.com">
+              <CopyToClipboard text="meckler.job.search@gmail.com">
                 <span
                   className="clickInput"
                   onClick={() => {
-                    alert("Ecrivez-moi !");
+                    alert("Adresse Mail Copiée");
                   }}
                 >
-                  monmail@gmail.com
+                  meckler.job.search@gmail.com
                 </span>
               </CopyToClipboard>
             </li>
@@ -46,7 +46,7 @@ const Contact = () => {
         <div className="socialNetwork">
           <ul>
             <a
-              href="https://fr.linkedin.com/"
+              href="https://www.linkedin.com/in/christophe-m-78566b231"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -55,7 +55,7 @@ const Contact = () => {
             </a>
 
             <a
-              href="https://www.google.com"
+              href="https://github.com/Khrystophe"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -49,7 +49,7 @@ const Navigation = () => {
         <ul>
           <li>
             <a
-              href="https://fr.linkedin.com/"
+              href="https://www.linkedin.com/in/christophe-m-78566b231"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -58,7 +58,7 @@ const Navigation = () => {
           </li>
           <li>
             <a
-              href="https://www.google.com"
+              href="https://github.com/Khrystophe"
               target="_blank"
               rel="noopener noreferrer"
             >
