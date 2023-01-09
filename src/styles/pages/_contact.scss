@@ -58,7 +58,7 @@
     padding: 1rem 3rem;
     z-index: 2;
     border-radius: $borderRadius;
-    width: 50%;
+    width: 500px;
 
     min-height: 300px;
 
@@ -207,9 +207,6 @@
 }
 @media screen and (max-width: 650px) {
   .contactContent {
-    .contactBox {
-      min-width: 50% !important;
-    }
     h1 {
       font-size: 1.4rem;
     }
@@ -221,10 +218,10 @@
     }
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 520px) {
   .contactContent {
     .contactBox {
-      min-width: 95% !important;
+      width: 95% !important;
     }
 
     .socialNetwork {
