@@ -7,7 +7,7 @@ export const portfolioData = [
     languagesIcons: ["fab fa-js", "fab fa-react", "fab fa-css3-alt"],
     source: "https://github.com/Khrystophe/CV",
     info: "DESCRIPTION DETAILLEE A VENIR ! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium, veritatis debitis odio eveniet quos incidunt eaque nemo eius perferendis consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium, veritatis debitis odio eveniet quos incidunt eaque nemo eius perferendis consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium, veritatis debitis odio eveniet quos incidunt eaque nemo eius perferendis consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium.",
-    picture: "./media/meckler54.png",
+    picture: "./media/meckler54.jpg",
   },
   {
     id: 2,
@@ -22,6 +22,6 @@ export const portfolioData = [
     ],
     source: "https://github.com/Khrystophe/Beyond-The-Abyss",
     info: "DESCRIPTION DETAILLEE A VENIR ! Projet présenté à la certification. Vous trouverez dans le lien vers le code source un dossier 'Rapports' contenant mes 'dossier projet' et 'dossier professionel'.",
-    picture: "./media/beyond (2).png",
+    picture: "./media/beyond (2).jpg",
   },
 ];
