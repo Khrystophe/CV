@@ -10,6 +10,7 @@ class ProjectList extends Component {
       { id: 2, value: "css" },
       { id: 3, value: "react" },
       { id: 4, value: "php" },
+      { id: 5, value: "sql" },
     ],
     selectedRadio: "javascript",
   };

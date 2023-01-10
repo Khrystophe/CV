@@ -16,31 +16,18 @@ const OtherSkills = () => {
           </li>
           <li>
             <i className="fas fa-check"></i>
-            <span>SEO</span>
-          </li>
-          <li>
-            <i className="fas fa-check"></i>
             <span>Méthode Agiles</span>
           </li>
-        </ul>
-        <ul>
           <li>
             <i className="fas fa-check"></i>
-            <span>Anglais</span>
+            <span>Visual Studio Code</span>
           </li>
           <li>
             <i className="fas fa-check"></i>
-            <span>Github</span>
-          </li>
-          <li>
-            <i className="fas fa-check"></i>
-            <span>SEO</span>
-          </li>
-          <li>
-            <i className="fas fa-check"></i>
-            <span>Méthode Agiles</span>
+            <span>phpMyAdmin</span>
           </li>
         </ul>
+        <ul></ul>
       </div>
     </div>
   );
