@@ -21,7 +21,7 @@ export const portfolioData = [
       "fab fa-css3-alt",
     ],
     source: "https://github.com/Khrystophe/Beyond-The-Abyss",
-    info: "DESCRIPTION DETAILLEE A VENIR ! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium, veritatis debitis odio eveniet quos incidunt eaque nemo eius perferendis consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium.",
+    info: "DESCRIPTION DETAILLEE A VENIR ! Projet présenté à la certification. Vous trouverez dans le lien vers le code source un dossier 'Rapports' contenant mes 'dossier projet' et 'dossier professionel'.",
     picture: "./media/beyond (2).png",
   },
 ];
