@@ -32,7 +32,7 @@ export const portfolioData = [
     languagesIcons: ["fab fa-js", "fab fa-php", "fab fa-css3-alt"],
     source: "https://github.com/Khrystophe/eartraining",
     info: "Exercice d'éducation de l'oreille. Génération aléatoire d'intervalles musicaux, customisation des exercices, suivi du taux de résussite pour chaque intervalles et des erreurs commises.",
-    picture: "./media/ear.png",
+    picture: "./media/ear.jpg",
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ export const portfolioData = [
     languagesIcons: ["fab fa-php", "fab fa-css3-alt", "fas fa-database"],
     source: "https://github.com/Khrystophe/mvc-pokemons",
     info: "Projet destiné à l'apprentissage de l'architecture MVC.",
-    picture: "./media/mvc.png",
+    picture: "./media/mvc.jpg",
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ export const portfolioData = [
     languagesIcons: ["fab fa-foursquare"],
     source: "https://github.com/Khrystophe/Flutter-animal-recognition",
     info: "Application de reconaissance d'animaux. Modèle généré avec 'Teachable Machine' de google.",
-    picture: "./media/fl.png",
+    picture: "./media/fl.jpg",
   },
   {
     id: 6,
@@ -62,7 +62,7 @@ export const portfolioData = [
     languagesIcons: ["far fa-dot-circle"],
     source: "https://github.com/Khrystophe/Ionic-ocr",
     info: "Application de reconnaissance optique de caractères avec Ionic et tesseract.",
-    picture: "/media/io.png",
+    picture: "/media/io.jpg",
   },
   {
     id: 7,
@@ -72,7 +72,7 @@ export const portfolioData = [
     languagesIcons: ["fab fa-react"],
     source: "https://github.com/Khrystophe/React-native-ocr",
     info: "Application de reconnaissance optique de caractères avec React-native et react-native-text-recognition.",
-    picture: "/media/rea.png",
+    picture: "/media/rea.jpg",
   },
   {
     id: 8,
@@ -82,6 +82,6 @@ export const portfolioData = [
     languagesIcons: ["fab fa-js", "fab fa-react"],
     source: "https://github.com/Khrystophe/React-native-rate",
     info: "Tutoriel react native du site https://fullstackopen.com/en/part10 .",
-    picture: "./media/full.png",
+    picture: "./media/full.jpg",
   },
 ];
