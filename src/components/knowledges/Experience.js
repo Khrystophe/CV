@@ -5,6 +5,16 @@ const Experience = () => {
     <div className="experience">
       <h3>Expérience</h3>
       <div className="exp">
+        <h4>Développeur d'application mobile - Arketeam</h4>
+        <h5>2023</h5>
+        <p>
+          Développement d’une application mobile d’océrisation de justificatifs
+          de paiement (module d’un SIRH) :
+        </p>
+        <p>- Algorithmie (extraction automatique des données)</p>
+        <p>- Technologies : FLUTTER / Php</p>
+      </div>
+      <div className="exp">
         <h4>Auto-entrepreneur</h4>
         <h5>2020 - 2021</h5>
         <p>

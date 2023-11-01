@@ -12,19 +12,19 @@ const OtherSkills = () => {
           </li>
           <li>
             <i className="fas fa-check"></i>
-            <span>Github</span>
+            <span>Développement backend/frontend</span>
           </li>
           <li>
             <i className="fas fa-check"></i>
-            <span>Méthode Agiles</span>
+            <span>Polyvalence</span>
           </li>
           <li>
             <i className="fas fa-check"></i>
-            <span>Visual Studio Code</span>
+            <span>Gestion du temps</span>
           </li>
           <li>
             <i className="fas fa-check"></i>
-            <span>phpMyAdmin</span>
+            <span>Correctif de bugs et amélioration</span>
           </li>
         </ul>
         <ul></ul>

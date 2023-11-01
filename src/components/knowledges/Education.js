@@ -5,6 +5,11 @@ const Education = () => {
     <div className="education">
       <h3>Formation</h3>
       <div className="edu">
+        <h4>Incubateur de compétences</h4>
+        <h5>2023</h5>
+        <p>Développement d'une application mobile</p>
+      </div>
+      <div className="edu">
         <h4>Titre de niveau 5 - BAC+2</h4>
         <h5>2022</h5>
         <p>Développeur Web / Web Mobile</p>
