@@ -82,6 +82,6 @@ export const portfolioData = [
     languagesIcons: ["fab fa-js", "fab fa-react"],
     source: "https://github.com/Khrystophe/React-native-rate",
     info: "Tutoriel react native du site https://fullstackopen.com/en/part10 .",
-    picture: "./media/full.jpg",
+    picture: "./media/fu.jpg",
   },
 ];
